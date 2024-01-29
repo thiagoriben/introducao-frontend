@@ -5,55 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Blog</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="root.css">
+    <style>
+        h1, h5 {
+            font-family: Helvetica, sans-serif;
+        }
+
+        .Principal {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .BoxTextos {
+            display: flex;
+        }
+
+        .divs {
+            margin: 0 10px;
+        }
+
+        section {
+            background-color: var(--main-color);
+            padding: 10px;
+            width: 250px;
+            height: 230px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        #SeçãoArtistasEBandasPreferidos,
+        #SeçãoViagem {
+            margin-left: auto;
+        }
+    </style>
 </head>
 <body>
-    <section id="SeçãoInfoBásica">
-        <h1>
-            Meu Blog
-        </h1>
-        <h5>
-            Meu nome é Thiago, nasci dia 13/11, estou estudando programação, e hoje é dia 28/01/2024, as 23:54, e nesse exato momento, estou ouvindo Everlong, de Foo Fighters.
-        </h5>
-    </section>
+    <div class="Principal">
+        <div class="BoxTextos">
+            <div class="divs">
+                <section id="SeçãoInfoBásica">
+                    <h1>Meu Blog</h1>
+                    <h5>Meu nome é Thiago, nasci dia 13/11, estou estudando programação, e hoje é dia 28/01/2024, as 23:54, e nesse exato momento, estou ouvindo Everlong, de Foo Fighters.</h5>
+                </section>
+            </div>
 
-    <section id="SeçãoRotinaDiária">
-        <h1>
-            Rotina Diária
-        </h1>
-        <h5>
-            Minha rotina atualmente, enquanto estou de férias da escola, se resume em estudar, sair e ficar em casa.
-        </h5>
-    </section>
+            <div class="divs">
+                <section id="SeçãoRotinaDiária">
+                    <h1>Rotina Diária</h1>
+                    <h5>Minha rotina atualmente, enquanto estou de férias da escola, se resume em estudar, sair e ficar em casa.</h5>
+                </section>
+            </div>
 
-    <section id="SeçãoHobbies">
-        <h1>
-            Meus Hobbies
-        </h1>
-        <h5>
-            Eu gosto muito de ouvir música, sair com meus amigos e família, e também de programação! :)
-        </h5>
-    </section>
+            <div class="divs">
+                <section id="SeçãoHobbies">
+                    <h1>Meus Hobbies</h1>
+                    <h5>Eu gosto muito de ouvir música, sair com meus amigos e família, e também de programação! :)</h5>
+                </section>
+            </div>
 
-    <section id="SeçãoArtistasEBandasPreferidos">
-        <h1>
-            Meus Artistas/Bandas Preferidas            
-        </h1>
-        <h5>
-            Gosto muito de Audioslave, pearl jam, Chris Cornell e outros ae.. 
-        </h5>
-    </section>
+            <div class="divs">
+                <section id="SeçãoArtistasEBandasPreferidos">
+                    <h1>Meus Artistas/Bandas Preferidas</h1>
+                    <h5>Gosto muito de Audioslave, Pearl Jam, Chris Cornell e outros.</h5>
+                </section>
+            </div>
 
-    <section id="SeçãoViagem">
-        <h1>
-            Viagem que ja fiz ou pretendo fazer
-        </h1>
-        <h5>
-            Uma viagem que achei muito foda, foi pra Santos - SP, mais especificamente, em praia grande. Quero muito viajar o mundo ainda.
-        </h5>
-    </section>
+            <div class="divs">
+                <section id="SeçãoViagem">
+                    <h1>Viagem que ja fiz ou pretendo fazer</h1>
+                    <h5>Uma viagem que achei muito legal foi para Santos - SP, mais especificamente, em Praia Grande. Quero muito viajar o mundo ainda.</h5>
+                </section>
+            </div>
+        </div>
+    </div>
 
-
-    <a href="hobbiesecomidas.html">hobbies e comidas outra pag</a><br>
-    <a href="imagens.html">imagens outra pag</a>
+    <div id="BoxLinks">
+        <a href="hobbiesecomidas.html">hobbies e comidas outra pag</a><br>
+        <a href="imagens.html">imagens outra pag</a>
+    </div>
 </body>
 </html>

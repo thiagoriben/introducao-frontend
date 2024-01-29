@@ -1,6 +1,21 @@
-h1{
-    font-family: helvetica;
+h1, h5 {
+    font-family: Helvetica, sans-serif;
 }
-h5{
-    font-family: helvetica;
+
+#SeçãoInfoBásica,
+#SeçãoRotinaDiária,
+#SeçãoHobbies,
+#SeçãoArtistasEBandasPreferidos,
+#SeçãoViagem {
+    background-color: var(--main-color);
+    padding: 10px; /* Ajuste o preenchimento conforme necessário */
+    width: 250px;
+    height: 230px;
+    text-align: center; /* Centralizar texto dentro das seções */
+    margin: 10px; /* Adicionar margem entre as seções */
+}
+
+#SeçãoArtistasEBandasPreferidos,
+#SeçãoViagem {
+    margin-left: auto; /* Empurra os blocos para a direita */
 }
